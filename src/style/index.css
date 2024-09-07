@@ -1,0 +1,31 @@
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+body {
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
+  
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+}
