@@ -17,7 +17,15 @@ const CouplesList: FC<CouplesListProps> = ({ sortedAndFilteredCouples }) => {
       {sortedAndFilteredCouples.length ? (
         <ul className="list-reset couples-list">
           {sortedAndFilteredCouples.map((couple) => (
-            <li key={couple.name + couple.day + couple.teacher}>
+            <li
+              key={
+                couple.name +
+                couple.day +
+                couple.teacher +
+                couple.start +
+                couple.subgroup
+              }
+            >
               <article className="couple-item">
                 <div className="couple-item__chapter">
                   <div className="couple-item__time">

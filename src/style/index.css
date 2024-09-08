@@ -12,6 +12,7 @@ body {
     background-color: var(--tg-theme-header-bg-color);
     color: var(--tg-theme-text-color);
     font-family: "Roboto", sans-serif;
+    padding-bottom: 60px;
 }
   
 html {
@@ -64,8 +65,7 @@ img {
     right: 0;
     background-color: var(--tg-theme-bg-color);
     padding: 16px 8px 8px 8px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top: 2px solid var(--tg-theme-button-color);
     z-index: 5;
 }
 
@@ -138,7 +138,9 @@ img {
     background-color: var(--tg-theme-bg-color);
     padding: 12px;
     border-radius: 12px;
-    border: 2px solid var(--tg-theme-button-color);
+    -webkit-box-shadow: 0px 0px 2px 0px var(--tg-theme-button-color);
+    -moz-box-shadow: 0px 0px 2px 0px var(--tg-theme-button-color);
+    box-shadow: 0px 0px 2 0px var(--tg-theme-button-color);
 }
 
 .couple-item__chapter {
