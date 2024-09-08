@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 .container {
     max-width: 1220px;
     margin: 0 auto;
@@ -7,8 +9,9 @@
 body {
     font-weight: 400;
     font-style: normal;
-    background-color: var(--tg-theme-bg-color);
+    background-color: var(--tg-theme-header-bg-color);
     color: var(--tg-theme-text-color);
+    font-family: "Roboto", sans-serif;
 }
   
 html {
@@ -28,4 +31,190 @@ a {
   
 img {
     max-width: 100%;
+}
+
+.app-chapter {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.app-chapter__date {
+    color: var(--tg-theme-hint-color);
+    font-size: 14px;
+}
+
+.app-chapter__greeting {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.mobile-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--tg-theme-bg-color);
+    padding: 16px 8px 8px 8px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    z-index: 5;
+}
+
+.mobile-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobile-bar__link {
+    color: var(--tg-theme-hint-color);
+}
+
+.mobile-bar__link.active {
+    color: var(--tg-theme-button-color);
+}
+
+.mobile-bar__link svg {
+    color: currentColor;
+}
+
+.loading-screen {
+    position: fixed;
+    background-color: var(--tg-theme-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 100%;
+}
+
+.ant-select-arrow,
+.ant-select-selector {
+    color: var(--tg-theme-text-color) !important;
+}
+
+.ant-select-selector {
+    border: 1px solid var(--tg-theme-hint-color) !important;
+    background: var(--tg-theme-header-bg-color) !important;
+}
+
+.ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap {
+    justify-content: center !important;
+}
+
+.ant-tabs-tab {
+    color: var(--tg-theme-text-color) !important;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--tg-theme-button-color) !important;
+}
+
+.ant-tabs-nav::before {
+    border-bottom: 1px solid var(--tg-theme-hint-color) !important;
+}
+
+.couples-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.couple-item {
+    background-color: var(--tg-theme-bg-color);
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid var(--tg-theme-button-color);
+}
+
+.couple-item__chapter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.couple-item__day {
+    display: flex;
+    flex-direction: column;
+}
+
+.couple-item__day span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--tg-theme-text-color);
+}
+
+.couple-item__time {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--tg-theme-text-color);
+}
+
+.couple-item__day span:nth-child(2) {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--tg-theme-hint-color);
+}
+
+.couple-item__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--tg-theme-text-color);
+}
+
+.couple-item__descr {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.couple-item__descr--point {
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    padding: 4px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.main-page__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.couple-empty {
+    color: var(--tg-theme-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    gap: 16px;
+    font-size: 20px;
+}
+
+.settings-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
