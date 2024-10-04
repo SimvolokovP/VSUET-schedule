@@ -27,5 +27,6 @@ export const useCouples = (couples: ICouple[], query: IQuery) => {
           couple.subgroup === "Две группы")
     );
   }, [query, sortedCouples]);
+  console.log(sortedAndSearchedCouples);
   return sortedAndSearchedCouples;
 };

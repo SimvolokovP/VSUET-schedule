@@ -183,6 +183,7 @@ img {
 .couple-item__descr {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -191,7 +192,6 @@ img {
     color: var(--tg-theme-button-text-color);
     padding: 4px;
     border-radius: 8px;
-    flex-wrap: wrap;
     display: flex;
     align-items: center;
     gap: 4px;

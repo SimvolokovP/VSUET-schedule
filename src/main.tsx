@@ -11,7 +11,7 @@ import "./style/media.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/VSUET-schedule">
         <App />
       </BrowserRouter>
     </Provider>
