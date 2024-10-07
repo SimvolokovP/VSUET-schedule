@@ -1,11 +1,7 @@
 import { FC } from "react";
 import { ICouple } from "../models/ICouple";
-import {
-  MdOutlineMeetingRoom,
-  MdOutlinePerson,
-  MdOutlineWorkOutline,
-} from "react-icons/md";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
+import CoupleItem from "./CoupleItem";
 
 interface CouplesListProps {
   sortedAndFilteredCouples: ICouple[];
@@ -17,7 +13,7 @@ const CouplesList: FC<CouplesListProps> = ({ sortedAndFilteredCouples }) => {
       {sortedAndFilteredCouples.length ? (
         <ul className="list-reset couples-list">
           {sortedAndFilteredCouples.map((couple) => (
-            <li
+            <CoupleItem
               key={
                 couple.name +
                 couple.day +
@@ -25,34 +21,8 @@ const CouplesList: FC<CouplesListProps> = ({ sortedAndFilteredCouples }) => {
                 couple.start +
                 couple.subgroup
               }
-            >
-              <article className="couple-item">
-                <div className="couple-item__chapter">
-                  <div className="couple-item__time">
-                    {couple.start} - {couple.end}
-                  </div>
-                  <div className="couple-item__day">
-                    <span>{couple.day}</span>
-                    <span>{couple.week}</span>
-                  </div>
-                </div>
-                <h3 className="couple-item__title">{couple.name}</h3>
-                <div className="couple-item__descr">
-                  <div className="couple-item__descr--point">
-                    {<MdOutlineMeetingRoom />}
-                    {couple.audience}
-                  </div>
-                  <div className="couple-item__descr--point">
-                    {<MdOutlineWorkOutline />}
-                    {couple.type}
-                  </div>
-                  <div className="couple-item__descr--point">
-                    {<MdOutlinePerson />}
-                    {couple.teacher}
-                  </div>
-                </div>
-              </article>
-            </li>
+              couple={couple}
+            />
           ))}
         </ul>
       ) : (

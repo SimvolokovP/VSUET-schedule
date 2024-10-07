@@ -15,6 +15,7 @@ const MobileBar: FC = () => {
               to={link.path}
             >
               <link.icon size={25} />
+              <span>{link.text}</span>
             </NavLink>
           </li>
         ))}

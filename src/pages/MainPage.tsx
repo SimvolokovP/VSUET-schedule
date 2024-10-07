@@ -45,7 +45,7 @@ const MainPage: FC = () => {
     <>
       {contextHolder}
       {isLoading ? <LoadingScreen /> : <></>}
-      <div className="main-page">
+      <div className="main-page pb">
         <div className="container main-page__container">
           <AppChapter />
           <AppFilter
